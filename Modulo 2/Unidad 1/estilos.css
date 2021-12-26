@@ -16,7 +16,8 @@ h2{
 
 h3{
     font-family: 'Comic Neue', cursive;
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    text-shadow: -4px -4px 4px rgb(0, 0, 0);
 }
 
 li{
@@ -38,11 +39,17 @@ body{
     padding: 20px;
     text-align: center;
     width: 400px;
+    border-style: double;
 }
 
 #formulario a:hover{
     color:blue;
     cursor: pointer;
+}
+
+#imagen{
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
 }
 
 .login {
@@ -54,9 +61,11 @@ body{
     justify-content: center;
     align-items: center;
     background: rgb(199, 197, 197);
-    box-shadow: -15px -10px 10px white;
+    
+    
   }
 
   .logo{
       font-size: 50px;
+      box-shadow: -12px -9px 8px white;
   }
