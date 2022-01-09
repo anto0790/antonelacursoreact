@@ -1,14 +1,9 @@
-#container-gral{
-    height: 600px;
-    justify-content: center;
-    align-items: center;
-}
-
 #container{
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .item1{
