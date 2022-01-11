@@ -1,0 +1,71 @@
+div{
+    font-family: 'Comic Neue', cursive;
+}
+
+
+h1{
+    font-family: 'Comic Neue', cursive;
+    margin-top: 10px;
+    height: 45px;
+    text-shadow: -15px -4px 4px white;
+}
+
+h2{
+    font-family: 'Comic Neue', cursive;
+}
+
+h3{
+    font-family: 'Comic Neue', cursive;
+    color: rgb(0, 0, 0);
+    text-shadow: -4px -4px 4px rgb(0, 0, 0);
+}
+
+li{
+    cursor: pointer;
+}
+
+li a:hover{
+    color: rgb(245, 80, 231);
+}
+
+body{
+    text-align: center;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(104,158,155,0.5144257532114409) 39%, rgba(156,121,199,1) 100%);  
+}
+
+#formulario{
+    border: rgb(0, 0, 0) 4px solid;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    border-style: double;
+}
+
+#formulario a:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+#imagen{
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.login {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(199, 197, 197);
+    
+    
+  }
+
+  .logo{
+      font-size: 50px;
+      box-shadow: -12px -9px 8px white;
+  }
