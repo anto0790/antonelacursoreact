@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	color: #000;
+	background: #332F29;
+	font-size:100%;
+}
+
+#contenedor {
+	width: 800px;
+	background: #8FA68E;
+	margin-right:auto;
+	margin-left:auto;
+	overflow: hidden;
+}
+
+nav {
+	background: #CC3910;
+	float: left;
+	width: 160px;
+}
+
+ul {
+	list-style-type:none;
+}
+
+a {
+	color:#F1F2C0;
+	text-decoration: none;
+}
+
+section {
+	background: #F1F2C0;
+	float: left;
+	margin: 0 0 0 25px;
+	width: 400px;
+}
+
+aside {
+	background: #CCC59E;
+	float: right;
+	width: 190px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 779px){
+	body{
+		margin: 0;
+		padding: 0;
+	}
+
+	#contenedor{
+		background: rgb(0, 0, 0);
+		width: 100%;
+	}	
+
+	nav{
+		font-family: 'Itim', cursive;
+		display: flex;
+		justify-content: center;
+		border-radius: 20px;
+		background: rgb(208, 93, 253);
+		float: none;
+		width: auto;
+	}
+
+	h1{
+		font-family: 'Itim', cursive;
+		font-size: 50px;
+		display: flex;
+		justify-content: center;
+		color: white;
+		text-shadow: -4px -4px 4px rgb(208, 93, 253);
+	}
+
+	h2{
+		font-family: 'Itim', cursive;
+		font-size: 25px;
+	}
+
+	a{
+		font-family: 'Itim', cursive;
+		font-size: 20px;
+		color: #ffffff;
+	}	
+
+	p{
+		font-family: 'Itim', cursive;
+		font-size: 18px;
+		display: flex;
+		justify-content: center;
+		float: none;
+		width: auto;
+	}
+
+	section{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: auto;
+		border-radius: 20px;
+		margin: 4px;
+		float: none;
+	}
+
+	aside{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: auto;
+		border-radius: 20px;
+		margin: 4px;
+		float: none;
+	}
+
+}
