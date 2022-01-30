@@ -1,0 +1,149 @@
+.head{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 33%, #193877 100%);
+    box-shadow: 0 0 5px rgb(0, 7, 109);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.imagenHead{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 4px;
+}
+
+#imagenCentro{
+    box-shadow: 0 0 5px rgb(177, 161, 74);
+    border-radius: 5px;
+    width: 1000px;
+    height: 350px;
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    background-color: rgb(175, 172, 172);
+    box-shadow: 0 0 5px rgb(107, 107, 107);
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%)
+}
+
+.btn-grad {
+    margin: 5px;
+    padding: 4px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+}
+    
+
+
+nav ul li a{
+    color: white;
+}
+
+.gral{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columnas{
+    display: flex;
+    align-content: flex-start;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black 1px solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+footer{
+    background-color: darkgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#historia{
+    display: flex;
+    flex-direction: column;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.contenedorPersonas{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.persona{
+    border: black 1px solid;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 2%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.persona h5, .persona h6{
+    text-align: center;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.persona h5{
+    font-size: 0.9em;
+}
+
+.persona h6{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.im{
+    width: 130px;
+    border-radius: 70px;
+    box-shadow: 0 0 5px rgb(0, 17, 255);
+    margin-bottom: 6px;
+}
+
