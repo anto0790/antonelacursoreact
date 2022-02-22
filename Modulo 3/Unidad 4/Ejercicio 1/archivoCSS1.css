@@ -1,0 +1,29 @@
+html{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#cuadrado1{
+    width: 80px;
+    height: 80px;
+    border: solid 1px rgb(255, 137, 235);
+    background-color: rgb(255, 137, 235);
+    margin: 30px;
+}
+
+#cuadrado2{
+    width: 80px;
+    height: 80px;
+    border: solid 1px rgb(51, 80, 209);
+    background-color: rgb(51, 80, 209);
+    margin: 30px;
+}
+
+#cuadrado3{
+    width: 80px;
+    height: 80px;
+    border: solid 1px rgb(255, 238, 0);
+    background-color: rgb(255, 238, 0);
+    margin: 30px;
+}

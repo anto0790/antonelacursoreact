@@ -1,5 +1,5 @@
     var distancia;
-    distancia=prompt('Ingrese una distancia: ')
+    distancia=2345
 
         switch (true) {
             case (distancia>0 && distancia<=1000): document.write('pie');
