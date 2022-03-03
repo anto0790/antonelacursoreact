@@ -1,11 +1,12 @@
 import React from "react";
+import '../styles/HomePage.css';
 
 
 const HomePage = (props) =>{
     return(
-        <main className="holder">
+        <main>
             <div className="homeimg">
-                <img src="images/roca.jpg" alt="roca" />
+                <img src="images/roca.jpg" alt="roca" width="1000" className="valImg" />
             </div>
             
             <div className="columnas">

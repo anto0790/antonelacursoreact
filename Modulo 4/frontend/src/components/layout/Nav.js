@@ -1,18 +1,19 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import '../../styles/Nav.css';
 
 
 const Nav = (props) =>{
     return(
         <nav>
-            <div className="holder">
+            
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/nosotros">Nosptros</Link></li>
-                    <li><Link to="/novedades">Novedades</Link></li>
-                    <li><Link to="/contacto">Contacto</Link></li>
+                    <li><NavLink activeClassName="activo" exact to="/" className="btn-grad">Home</NavLink></li>
+                    <li><NavLink activeClassName="activo" exact to="/nosotros" className="btn-grad">Nosptros</NavLink></li>
+                    <li><NavLink activeClassName="activo" exact to="/novedades" className="btn-grad">Novedades</NavLink></li>
+                    <li><NavLink activeClassName="activo" exact to="/contacto" className="btn-grad">Contacto</NavLink></li>
                 </ul>
-            </div>
+           
         </nav>
         
     );

@@ -1,6 +1,8 @@
 import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
+import '../src/styles/App.css';
+
 import HomePage from './pages/HomePage';
 import ContactoPage from './pages/ContactoPage';
 import NosotrosPage from './pages/NosotrosPage';
