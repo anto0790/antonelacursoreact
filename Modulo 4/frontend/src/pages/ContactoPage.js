@@ -5,7 +5,7 @@ import '../styles/ContactoPage.css';
 const ContactoPage = (props) =>{
     return(
         <main className="holder">
-            <div className="columna Contacto">
+            <div className="columna contacto">
                 <h2 className="titulo">Complete el formulario: </h2>
                 <form action="" method="" className="forulario">
                     <p>
