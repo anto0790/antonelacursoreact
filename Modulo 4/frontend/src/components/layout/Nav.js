@@ -9,7 +9,7 @@ const Nav = (props) =>{
             
                 <ul>
                     <li><NavLink activeClassName="activo" exact to="/" className="btn-grad">Home</NavLink></li>
-                    <li><NavLink activeClassName="activo" exact to="/nosotros" className="btn-grad">Nosptros</NavLink></li>
+                    <li><NavLink activeClassName="activo" exact to="/nosotros" className="btn-grad">Nosotros</NavLink></li>
                     <li><NavLink activeClassName="activo" exact to="/novedades" className="btn-grad">Novedades</NavLink></li>
                     <li><NavLink activeClassName="activo" exact to="/contacto" className="btn-grad">Contacto</NavLink></li>
                 </ul>
