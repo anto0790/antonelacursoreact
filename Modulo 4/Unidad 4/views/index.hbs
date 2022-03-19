@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+{{#if datoIngresado}}
+   <p>Color: {{colorIngresado}} no es una opción! <a href="/volver">Volver</a> </p>
+
+{{/if}}
+
+    {{#unless datoIngresado}}
+        <p>Ingresa red o blue</p>
+        <form action="/ingresar" method="post">
+            <input type="text" name="color">
+            <button>Ingresar</button>
+        </form>
+    {{/unless}}

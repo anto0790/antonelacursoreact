@@ -7,9 +7,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-/*var firstRouter= require('./routes/first');
+var firstRouter= require('./routes/first');
 var secondRouter= require('./routes/second');
-var thirdRouter= require('./routes/third');*/
+var thirdRouter= require('./routes/third');
 
 
 var app = express();
@@ -27,12 +27,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-/*app.use('/first', firstRouter);
+app.use('/first', firstRouter);
 app.use('/second', secondRouter);
 app.use('/third', thirdRouter);
-*/
 
-app.get('/first', function(req,res){
+
+/*app.get('/first', function(req,res){
   res.send('Página uno');
 });
 
@@ -44,10 +44,13 @@ app.get('/third', function(req,res){
   res.send('Página tres');
 });
 
+*/
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {
