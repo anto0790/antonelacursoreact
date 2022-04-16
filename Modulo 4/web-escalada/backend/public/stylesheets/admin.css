@@ -5,3 +5,10 @@
 .form-control{
     width: 300px;
 }
+
+.containerAgregar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
