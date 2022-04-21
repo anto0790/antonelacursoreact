@@ -11,6 +11,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
+var inicioRouter = require('./routes/admin/inicio');
+var sectoresRouter = require('./routes/admin/sectores');
+
 const async = require('hbs/lib/async');
 
 var app = express();
@@ -50,7 +53,10 @@ secured= async(req, res, next) =>{
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', secured, adminRouter);
+app.use('/admin/novedades', adminRouter);
+app.use('/admin/inicio', secured, inicioRouter);
+app.use('/admin/sectores', sectoresRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,16 +1,16 @@
 const async = require('hbs/lib/async');
 var pool= require('./bd');
 
-async function getNovedades(){
-    var query= 'select * from novedades';
+async function getSectores(){
+    var query= 'select * from sectores';
     var rows= await pool.query(query);
 
     return rows;
 }
 
-async function insertNovedad(obj){
+async function insertSector(obj){
     try{
-        var query= 'insert into novedades set ?';
+        var query= 'insert into sectores set ?';
         var rows= await pool.query(query, [obj]);
         return rows;
     }
@@ -20,21 +20,21 @@ async function insertNovedad(obj){
     }
 }
 
-async function deleteNovedadesById(id){
-    var query= 'delete from novedades where id = ?';
+async function deleteSectoresById(id){
+    var query= 'delete from sectores where id = ?';
     var  rows= await pool.query(query, [id]);
     return rows;
 }
 
-async function getNovedadById(id){
-    var query= 'select * from novedades where id = ?';
+async function getSectorById(id){
+    var query= 'select * from sectores where id = ?';
     var rows= await pool.query(query, [id]);
     return rows[0];
 }
 
-async function modificarNovedadById(obj, id){
+async function modificarSectorById(obj, id){
     try{
-        var query='update novedades set ? where id = ?';
+        var query='update sectores set ? where id = ?';
         var rows= await pool.query(query, [obj,id]);
         return rows;
     }
@@ -43,8 +43,4 @@ async function modificarNovedadById(obj, id){
     }
 }
 
-module.exports= {getNovedades, insertNovedad, deleteNovedadesById, getNovedadById, modificarNovedadById};
-
-
-
-
+module.exports= {getSectores, insertSector, deleteSectoresById, getSectorById, modificarSectorById};

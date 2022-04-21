@@ -1,6 +1,6 @@
 var express = require('express');
-const async = require('hbs/lib/async');
 var router = express.Router();
+const async = require('hbs/lib/async');
 var novedadesModel = require('../../models/novedadesModel');
 
 /* GET home page. */
@@ -44,5 +44,43 @@ router.post('/agregar', async (req, res, next)=>{
     })
   }
 })
+
+router.get('/eliminar/:id', async (req,res, next) => {
+  var id=req.params.id;
+  await novedadesModel.deleteNovedadesById(id);
+  res.redirect('/admin/novedades');
+})
+
+router.get('/modificar/:id', async(req, res, next)=>{
+  var id=req.params.id;
+  var novedad= await novedadesModel.getNovedadById(id);
+
+  res.render('admin/modificar', {
+    layout: 'admin/layout',
+    novedad
+  })
+})
+
+   router.post('/modificar', async (req, res, next)=>{
+     try{
+      var obj={
+        titulo: req.body.titulo,
+        subtitulo: req.body.subtitulo,
+        cuerpo: req.body.cuerpo
+      };
+
+      await novedadesModel.modificarNovedadById(obj, req.body.id);
+      res.redirect('/admin/novedades');
+
+     }
+     catch(error){
+      console.log(error);
+      res.render('admin/modificar', {
+        layout:'admin/layout',
+        error:true,
+        message: 'No se modifico la novedad'
+      })
+     }
+   })
 
 module.exports = router;

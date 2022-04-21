@@ -12,3 +12,10 @@
     flex-direction: column;
     margin-top: 10px;
 }
+
+.btn-success{
+    margin: 10px;
+    background-color: black;
+    border: black;
+}
+

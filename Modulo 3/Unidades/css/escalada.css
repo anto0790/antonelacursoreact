@@ -38,6 +38,10 @@ nav ul{
     margin-top: 0;
 }
 
+nav ul li a{
+    color: white;
+}
+
 .btn-grad {
     background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%)
 }
@@ -59,10 +63,6 @@ nav ul{
    background-position: right center; /* change the direction of the change here */
    color: #fff;
    text-decoration: none;
-}
-    
-nav ul li a{
-    color: white;
 }
 
 .container-index{
