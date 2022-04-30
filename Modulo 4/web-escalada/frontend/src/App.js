@@ -1,11 +1,10 @@
 import React from "react";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import '../src/styles/App.css';
 
 import HomePage from './pages/HomePage';
 import ContactoPage from './pages/ContactoPage';
-import NosotrosPage from './pages/NosotrosPage';
 import NovedadesPage from './pages/NovedadesPage';
 import SectoresPage from './pages/SectoresPage';
 import Header from "./components/layout/Header";
@@ -15,23 +14,23 @@ import Nav from "./components/layout/Nav";
 
 function App() {
   return (
+    <div className="fondo">
+    <Router>
+      <Header />
+      <Nav />
 
-        <Router>
-          <Header/>
-           <Nav/> 
+      <Switch>
 
-          <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/novedades" exact component={NovedadesPage} />
+        <Route path="/contacto" exact component={ContactoPage} />
+        <Route path="/sectores" exact component={SectoresPage} />
 
-            <Route path="/" exact component={HomePage} />
-            <Route path="/nosotros" exact component={NosotrosPage} />
-            <Route path="/novedades" exact component={NovedadesPage} />
-            <Route path="/contacto" exact component={ContactoPage} />
-            <Route path="/sectores" exact component={SectoresPage} />
+      </Switch>
+      <Footer />
+    </Router>
+    </div>
 
-          </Switch>
-          <Footer/>
-        </Router>
-        
   );
 }
 

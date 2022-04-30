@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var fileUpload = require('express-fileupload');
+var cors = require('cors');
 
 require('dotenv').config();
 var session= require('express-session');
@@ -13,6 +15,7 @@ var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
 var inicioRouter = require('./routes/admin/inicio');
 var sectoresRouter = require('./routes/admin/sectores');
+var apiRouter = require('./routes/api');
 
 const async = require('hbs/lib/async');
 
@@ -50,12 +53,18 @@ secured= async(req, res, next) =>{
   }
 }
 
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir:'/tmp/'
+}));
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', adminRouter);
 app.use('/admin/inicio', secured, inicioRouter);
 app.use('/admin/sectores', sectoresRouter);
+app.use('/api', cors(), apiRouter); 
 
 
 // catch 404 and forward to error handler

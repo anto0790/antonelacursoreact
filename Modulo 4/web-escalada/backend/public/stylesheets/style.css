@@ -1,24 +1,24 @@
-.head{
+.head {
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,1) 33%, #193877 100%);
-  box-shadow: 0 0 0px rgb(0, 7, 109);
+  box-shadow: 0 0 5px rgb(0, 7, 109);
   display: flex;
   justify-content: center;
   border-radius: 10px;
 }
 
-.imagenHead{
+.imagenHead {
   width: 200px;
   height: 200px;
   margin-bottom: 4px;
 }
 
-header h1{
+header h1 {
   display: flex;
   align-items: center;
 }
 
-footer{
+footer {
   background-color: darkgray;
   padding: 20px;
   display: flex;
@@ -26,6 +26,6 @@ footer{
   margin: 20px;
 }
 
-.bgBody{
-  background-color: #193877;
+.bgBody {
+  background-color: #000000;
 }

@@ -9,9 +9,13 @@
     color: white;
 }
 
-.columna .contacto{
-    border-right: 1px solid #ddd;
-    float: left;
+.container-contact{
+   padding: 20px;
+   background-color: #9da9ed;
+   margin-left: 80px;
+   margin-right: 80px;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 
 .datos{
@@ -70,4 +74,5 @@
 .colDatos{
     position: relative;
     top: 10px;
+    color: white;
 }

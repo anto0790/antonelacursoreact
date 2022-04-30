@@ -9,7 +9,7 @@ const HomePage = (props) =>{
                 <img src="images/roca.jpg" alt="roca" width="1000" className="valImg" />
             </div>
             
-            <div className="columnas">
+            <div className="container">
                 <div className="bienvenidos left">
                     <h2>Bienvenidos</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores iure quasi cum est expedita laboriosam atque, reiciendis eligendi tempore debitis quia provident incidunt aliquam reprehenderit saepe quis. Atque, provident fugit.

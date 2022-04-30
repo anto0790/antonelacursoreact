@@ -1,28 +1,18 @@
 nav{
-    background-color: skyblue;
-    margin-bottom: 2em;
+    background-color: rgb(175, 172, 172);
+    box-shadow: 0 0 5px rgb(107, 107, 107);
+    border-radius: 10px;
 }
 
 nav ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li{
-    display: inline-block;
-    width: 16.3%;
-    position: relative;
-    left: 235px;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 0;
 }
 
 nav ul li a{
     color: white;
-    text-decoration: none;
-    text-align: center;
-    padding: 0.2em 0.4em;
-    display: block;
-    position: relative;
 }
 
 nav ul li a:hover{
@@ -30,7 +20,7 @@ nav ul li a:hover{
 }
 
 nav ul li a.activo{
-    background: rgb(255, 76, 10);
+    background: rgb(0, 0, 0);
 }
 
 .btn-grad {
