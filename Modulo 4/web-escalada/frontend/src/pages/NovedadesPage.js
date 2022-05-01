@@ -21,7 +21,7 @@ const NovedadesPage = (props) =>{
 
     return(
         <div className="holder">
-            <h2>Novedades</h2>
+            <h1 className="novColor">Novedades</h1>
             {loading ?(
                 <p>cargando..</p>
             ):(
