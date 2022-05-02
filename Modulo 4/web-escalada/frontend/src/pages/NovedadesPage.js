@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import axios from 'axios';
 import '../styles/NovedadesPage.css';
-import NovedadItem from '../components/novedades/NovedadItem';
+import NovedadItem from '../components/consApi/NovedadItem';
 
 
 const NovedadesPage = (props) =>{

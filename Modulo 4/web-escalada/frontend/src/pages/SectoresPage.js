@@ -1,19 +1,35 @@
-import React from "react";
-import '../styles/HomePage.css';
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import '../styles/NovedadesPage.css';
+import SectorItem from '../components/consApi/SectorItem';
 
 
-const SectoresPage = (props) => {
-    return (
-        <main>
-            <div className="container">
+const SectoresPage = (props) =>{
 
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores iure quasi cum est expedita laboriosam atque, reiciendis eligendi tempore debitis quia provident incidunt aliquam reprehenderit saepe quis. Atque, provident fugit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores iure quasi cum est expedita laboriosam atque, reiciendis eligendi tempore debitis quia provident incidunt aliquam reprehenderit saepe quis. Atque, provident fugit.
-                </p>
+    const [loading, setLoading]=useState(false);
+    const [sectores, setSectores]=useState([]);
 
-            </div>
+    useEffect(()=>{
+        const cargarSectores= async() =>{
+            setLoading(true);
+            const response= await axios.get('http://localhost:3000/apiSectores/sectores');
+            setSectores(response.data);
+            setLoading(false);
+        }
+        cargarSectores();
+    }, []); 
 
-        </main>
+    return(
+        <div className="holder">
+            <h1 className="novColor">Sectores</h1>
+            {loading ?(
+                <p className="novColor">cargando..</p>
+            ):(
+                sectores.map(item => <SectorItem key={item.id}
+                    title={item.titulo}
+                    body={item.cuerpo}/>)
+            )}
+        </div>
     );
 }
 
