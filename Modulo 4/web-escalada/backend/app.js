@@ -16,7 +16,7 @@ var adminRouter = require('./routes/admin/novedades');
 var inicioRouter = require('./routes/admin/inicio');
 var sectoresRouter = require('./routes/admin/sectores');
 var apiRouter = require('./routes/api');
-var apiSectoresRouter = require('./routes/apiSectores');
+
 
 const async = require('hbs/lib/async');
 
@@ -66,7 +66,7 @@ app.use('/admin/novedades', adminRouter);
 app.use('/admin/inicio', secured, inicioRouter);
 app.use('/admin/sectores', sectoresRouter);
 app.use('/api', cors(), apiRouter); 
-app.use('/apiSectores', cors(), apiSectoresRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
