@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import '../styles/NovedadesPage.css';
 import NovedadItem from '../components/consApi/NovedadItem';

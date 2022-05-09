@@ -9,7 +9,7 @@ const NovedadItem = (props) =>{
         <div className='boxNovedades'>
             <h2> {title} </h2>
             <h4> {subtitle} </h4>
-            <img src={imagen} />
+            <img src={imagen} alt="imagen" />
             <div dangerouslySetInnerHTML={{ __html: body }} className="textColor" />
             <hr/>
         </div>
