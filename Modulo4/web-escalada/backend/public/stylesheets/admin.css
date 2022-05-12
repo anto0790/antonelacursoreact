@@ -35,4 +35,17 @@
     color: rgb(255, 255, 255);
 }
 
+footer {
+    background-color: darkgray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
 
+footer p{
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}

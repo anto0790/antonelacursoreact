@@ -4,31 +4,33 @@ import '../styles/NovedadesPage.css';
 import NovedadItem from '../components/consApi/NovedadItem';
 
 
-const NovedadesPage = (props) =>{
+const NovedadesPage = (props) => {
 
-    const [loading, setLoading]=useState(false);
-    const [novedades, setNovedades]=useState([]);
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
 
-    useEffect(()=>{
-        const cargarNovedades= async() =>{
+    useEffect(() => {
+        const cargarNovedades = async () => {
             setLoading(true);
-            const response= await axios.get('http://localhost:3000/api/novedades');
+            const response = await axios.get('http://localhost:3000/api/novedades');
             setNovedades(response.data);
             setLoading(false);
         }
         cargarNovedades();
-    }, []); 
+    }, []);
 
-    return(
-        <div className="holder">
+    return (
+        <div  className="nov">
             <h1 className="novColor">Novedades</h1>
-            {loading ?(
-                <p>cargando..</p>
-            ):(
-                novedades.map(item => <NovedadItem key={item.id}
-                    title={item.titulo} subtitle={item.subtitulo}
-                    imagen={item.imagen} body={item.cuerpo}/>)
-            )}
+            <div className="holder">
+                {loading ? (
+                    <p>cargando..</p>
+                ) : (
+                    novedades.map(item => <NovedadItem key={item.id}
+                        title={item.titulo} subtitle={item.subtitulo}
+                        imagen={item.imagen} body={item.cuerpo} />)
+                )}
+            </div>
         </div>
     );
 }

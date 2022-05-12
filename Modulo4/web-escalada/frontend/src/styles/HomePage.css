@@ -27,6 +27,10 @@ main{
     font-size: 1.3em;
 }
 
+.novColor{
+    color: rgb(48, 48, 221);
+}
+
 .testimonios{
     width: 25%;
     float: right;
