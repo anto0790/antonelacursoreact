@@ -12,7 +12,7 @@ const SectoresPage = (props) => {
     useEffect(() => {
         const cargarSectores = async () => {
             setLoading(true);
-            const response = await axios.get('http://localhost:3000/api/sectores');
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/sectores`);
             setSectores(response.data);
             setLoading(false);
         }
